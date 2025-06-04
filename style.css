@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Header y navegación */
 header {
     position: fixed;
     top: 0;
@@ -61,12 +60,11 @@ header {
     color: #3498db;
 }
 
-/* Main content */
+
 main {
     margin-top: 80px;
 }
 
-/* Hero section */
 .hero {
     padding: 4rem 5%;
     min-height: 80vh;
@@ -140,7 +138,7 @@ main {
     border: 5px solid #3498db;
 }
 
-/* Sección experiencia */
+
 .experiencia {
     padding: 4rem 5%;
     background: #f4f4f4;
@@ -208,7 +206,7 @@ main {
     color: #2c3e50;
 }
 
-/* Sección proyectos */
+
 .projects {
     padding: 4rem 5%;
 }
@@ -259,7 +257,6 @@ main {
     color: #666;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
