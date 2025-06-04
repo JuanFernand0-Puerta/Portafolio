@@ -4,71 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/ea8357cc0a.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-  <header>
-      <nav id="navbar">
-        <div class="brand">Juan <span>Fernando <span>Puerta</span> </span>Vásquez</div>
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-      </nav>
-  </header>
-
-  <main>
-   <section id="inicio" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Juan Fernando Puerta Vasquez</h1>
-        <h2>Desarrollador Web en proceso...</h2>
-        <p>Apasionado por crear experiencias web unicas y funcionales, siempre 
-          buscando aprender nuevas tecnologias y mejorar habilidades</p>
-          <div class="social-links">
-            <a href="https://github.com/JuanFernand0-Puerta" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/Ozzyto_" target="_blank"><i class="fab fa-x"></i></a>
-            <a href="https://www.instagram.com/jfp_2606/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/juanfer.puerta.73" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/@Ozzyto_/featured" target="_blank"><i class="fab fa-youtube"></i></a>
-          </div>
-      </div>
-      <div class="hero-image">
-        <img src="imagenes/Fotopersonal.jpg" alt="profile image">
-      </div>
-    </div>
-   </section>
-
-   <section id="experiencia" class="experiencia">
-      <h2 class="section-title">Experiencia Laboral</h2>
-      <div class="timeline">
-        </div class="timeline-item">
-        <div class="timeline-content">
-            <span class="date">N/A - Formandome </span>
-            <h3>Desarrolador en formacion con Riwi S.A</h3>
-            <h4>Actual estudiante en Riwi y Udea</h4>
-            <p>Aprendiendo a desarrollar. Aprendido por el momento:(fundamentos programacion con python
-            paginas web atractivas utilizando HTML y CSS)</p>
-            <ul class="skills">
-              <li>HTML5(Aprendiendo)</li>
-              <li>Python(Fundamentos)</li>
+    <header>
+        <nav id="navbar" role="navigation">
+            <div class="brand">Juan <span>Fernando <span>Puerta</span></span> Vásquez</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" aria-current="page">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
             </ul>
-          </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="hero-title">Juan Fernando Puerta Vásquez</h1>
+                    <h2>Desarrollador web en formación</h2>
+                    <p>Apasionado por crear experiencias web únicas y funcionales, siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/JuanFernand0-Puerta" target="_blank" aria-label="GitHub de Juan Fernando"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Ozzyto_" target="_blank" aria-label="Twitter de Juan Fernando"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jfp_2606/" target="_blank" aria-label="Instagram de Juan Fernando"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/juanfer.puerta.73" target="_blank" aria-label="Facebook de Juan Fernando"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@Ozzyto_/featured" target="_blank" aria-label="YouTube de Juan Fernando"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="imagenes/Fotopersonal.jpg" alt="Imagen de perfil">
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experiencia" aria-labelledby="experiencia-title">
+            <h2 id="experiencia-title" class="section-title">Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">Actualmente - En formación</span>
+                        <h3>Desarrollador en formación con Riwi S.A</h3>
+                        <h4>Estudiante en Riwi y UdeA</h4>
+                        <p>En proceso de aprendizaje en desarrollo web. Conocimientos adquiridos hasta ahora: fundamentos de programación con Python y creación de páginas web atractivas usando HTML y CSS.</p>
+                        <ul class="skills">
+                            <li>HTML5 (En aprendizaje)</li>
+                            <li>Python (Fundamentos)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects" aria-labelledby="proyectos-title">
+            <h2 id="proyectos-title">Proyectos Personales</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="imagenes/Proyecto_Login.PNG" alt="Captura de pantalla del proyecto de login">
+                    </div>
+                    <div class="project-info">
+                        <h3>Proyecto de Login</h3>
+                        <p>Sistema de login visual básico desarrollado durante mi formación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Juan Fernando Puerta Vásquez. Todos los derechos reservados.</p>
+            <p><a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSKkxGrVkHtLJMZBkjVrZCnkChntBSlzZvscvnJvCqczkhVFZBDNzTxMfWzcNMGVdmThHPTg" target="_blank" aria-label="Enviar correo a Juan Fernando">Contáctame</a></p>
         </div>
-      </div>
-   </section>
-   <section id="Proyectos" class="projects">
-    <h2>Proyectos Personales</h2>
-    <div class="Projects-container">
-      <div class="project-card">
-      </div class="project-img">
-        <img src="imagenes/Proyecto_Login.PNG" alt="proyecto 1">
-      
-    </div>
-   </section>
-  </main>
+    </footer>
 </body>
 </html>
